@@ -145,7 +145,6 @@ class OptionPanel extends React.Component {
           <Menu.Item key="edit">
             <img src={pencil} className='menu_icon' alt='' />
           </Menu.Item>
-          <Divider type="vertical" />
           <Menu.Item key="color">
             <Popover content={colorContent} title={null} trigger="click">
               <img src={color} className='menu_icon' alt='' />
@@ -156,11 +155,9 @@ class OptionPanel extends React.Component {
               <img src={font} className='menu_icon' alt='' />
             </Popover>
           </Menu.Item>
-          <Divider type="vertical" />
           <Menu.Item key="undo">
             <img src={undo} className='menu_icon' alt='' />
           </Menu.Item>
-          <Divider type="vertical" />
           <Menu.Item key="clear">
             <img src={remove} className='menu_icon' alt='' />
           </Menu.Item>
@@ -172,14 +169,16 @@ class OptionPanel extends React.Component {
             <img src={history} className='menu_icon' alt='' />
           </Menu.Item>
 
-          <Menu.Item key="share">
-            <img src={share} className='menu_icon' alt='' />
-          </Menu.Item>
+
           <Menu.Item key="fullscreen">
             {this.state.isFullScreen ? (<Icon type={'fullscreen-exit'} />) : <img src={fullscreen} className='menu_icon' alt='' />}
           </Menu.Item>
 
           <Divider type="vertical" />
+
+          <Menu.Item key="share">
+            <img src={share} className='menu_icon' alt='' />
+          </Menu.Item>
 
           <Menu.Item key="donate">
             <img src={donate} className='menu_icon' alt='' />
